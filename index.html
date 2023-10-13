@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+
+    <style>
+        * {
+            /* box-sizing: border-box; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(255, 212, 69), rgb(165, 147, 64));
+            position: fixed;
+            width: 100%;
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            padding: 0.5em 1em;
+        }
+        nav ul li:hover {
+            background-color: orange;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        #logo-wrapper img {
+            width: 100px;
+        }
+
+        .content {
+            min-height: 25vh;
+            padding: 0.5em 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .header2 {
+            min-height: 22vh;
+            padding: 0.5em 2em;
+            padding-top: 7em;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .header3 {
+            min-height: 20vh;
+            padding: 0.5em 2em;
+            padding-top: 1em;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255, .2);
+            padding: 1em;
+            border-radius: .5em;
+        }
+
+        #about {
+            background: tomato;
+            /* background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0"); */
+        }
+        #exp {
+            background: darkslateblue;
+        }
+        #edu {
+            background: pink;
+        }
+        #skill {
+            background: green;
+        }
+        #interest {
+            background: orange;
+        }
+        #award {
+            background: tomato;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            font-size: 10px;
+            padding: 1em;
+        }
+
+        #btn-contact-me {
+            background-color: blue;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0.3em;
+        }
+
+        .section-wrapper {
+            display: flex;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div id="logo-wrapper">
+            <img src="Anan.png" alt="Logo" />
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#exp">Pengalaman</a></li>
+                <li><a href="#edu">Riwayat Pendidikan</a></li>
+                <li><a href="#skill">Keahlian</a></li>
+                <li><a href="#interest">Minat</a></li>
+                <li><a href="#award">Penghargaan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="header1" class="header2">
+            <h1>Selamat datang di Website Aviera Gold. Melayani <span id="typed-element"></span></h1>
+        </div>
+        <div class="section-wrapper">
+            <section id="about" class="content">    
+                <div class="card">
+                    <h1>Tentang Saya</h1>
+    
+                    <p>Seorang Freelancer lulusan SMA yang sudah mulai terjun ke Dunia Jual Beli Game, Elektronik semenjak SMP. </p>
+                    <p>Memiliki Minat yang tinggi pada dunia Teknologi, Art, Digital Investment. Sedang mencari peluang untuk bisa begabung dengan Perusahaan untuk menambah Portofolio</p>
+    
+                </div>
+    
+            </section>
+    
+            <section id="exp" class="content">
+                <div class="card">
+                    <h1>Pengalaman</h1>
+                    <p>Pengalaman secara Formal yang dimiliki sangat minim, namun sering mengerjakan Tugas non formal Seperti Joki, Admin Grup WhatsApp, Mengelola Keuangan Grup, serta Asistensi Seminar</p>
+                    <p>Pernah belajar di Universitas Singaperbangsa Karawang hingga Semester 3 Jurusan Teknik Informatika, keluar karena alasan tertentu.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section id="edu" class="content">
+                <div class="card">
+                    <h1>Riwayat Pendidikan</h1>
+                    <ol>
+                        <li>SDIT Insan Kamil</li>
+                        <li>SMPN 1 Cikarang Utara</li>
+                        <li>SMAN 1 Cikarang Pusat / Kelas Cerdas Istimewa</li>
+                    </ol>
+                </div>
+            </section>
+            <section id="skill" class="content">
+                <div class="card">
+                    <h1>Keahlian</h1>
+                    <p>Belum memiliki keahlian secara Khusus yang tersertifikasi.</p>
+                    <p>Tetapi saya sudah beberapa kali terlibat dengan kegiatan seperti Asistensi Seminar Online dan Offline, Pengelolaan Dana Grup serta pembukuannya secara Akuntan Dasar, Jasa Joki Youtube, Game, dan Top Up, serta Pengawas ANBK tingkat SD</p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="section-wrapper">
+            <section id="interest" class="content">
+                <div class="card">
+                    <h1>Minat</h1>
+                    <p>Memiliki Minat yang tinggi di bidang Teknologi, Internet, dan Money Investment</p>
+                    <p>Sedang Mengumpulkan lebih banyak Ilmu yang dapat menunjang Minat saya agar dapat terealisasi</p>
+                </div>
+            </section>
+            <section id="award" class="content">
+                <div class="card">
+                    <h1>Penghargaan</h1>
+                    <p>Belum memiliki Penghargaan secara Formal untuk Saat ini</p>
+                </div>
+            </section>
+        </div>
+        <div class="header3">
+            <h3>Berikut Bisnis yang sedang saya Ikuti <a href="http://bit.ly/RekeningEmasQM">Bit.ly/RekeningEmasQM</a></h3>
+            <p>Terimakasih atas Atensinya ^^</p>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <span>&copy; 2023 All Rights Reserved. Anandito Wijaya Kusuma.</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+        let typed = new Typed('#typed-element', {
+            strings: [
+                'pembuatan Landing Page Quantum Metal',
+                'Pembuatan Landing Page QM Umroh COD',
+                'Desain Logo sesuai Request',
+                'Jasa Joki, JB, dan Top Up Game',
+                'SEO Youtube'
+            ],
+            typeSpeed: 50,
+            backSpeed: 10,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>
